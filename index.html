@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Twitter</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            whiteD9: "#D9D9D9",
+                            lightDark: "#202327",
+                            gray1: "#6E767D",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="bg-[#000000]">
+        <div class="container pt-1 flex gap-7 justify-between w-full">
+            <!-- left side -->
+            <div class="mx-3 w-[17rem] text-whiteD9">
+                <nav class="flex flex-col gap-2">
+                    <!-- twitter logo -->
+                    <a href="/" class="p-3">
+                        <i class="fab text-[24px] fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="p-3 flex items-center">
+                        <img src="./assets/images/home.svg" alt="" />
+                        <span class="ml-5 font-size-4 font-semibold">Home</span>
+                    </a>
+
+                    <a href="#" class="p-3 flex items-center">
+                        <img src="./assets/images/Explore.svg" alt="" />
+                        <span class="ml-5 font-size-4 font-semibold"
+                            >Explore</span
+                        >
+                    </a>
+
+                    <a href="#" class="p-3 flex items-center">
+                        <div class="relative">
+                            <img
+                                src="./assets/images/Notifications.svg"
+                                alt=""
+                            />
+                            <!-- notification -->
+                            <span
+                                class="absolute top-[-5px] right-[-5px] w-4 h-4 bg-[#1D9BF0] rounded-full text-[10px] font-semibold flex justify-center items-center text-white"
+                                >1</span
+                            >
+                        </div>
+                        <span class="ml-5 font-size-4 font-semibold"
+                            >Notifications</span
+                        >
+                    </a>
+
+                    <a href="#" class="p-3 flex items-center">
+                        <img src="./assets/images/Messages.svg" alt="" />
+                        <span class="ml-5 font-size-4 font-semibold"
+                            >Messages</span
+                        >
+                    </a>
+
+                    <a href="#" class="p-3 flex items-center">
+                        <img src="./assets/images/Bookmarks.svg" alt="" />
+                        <span class="ml-5 font-size-4 font-semibold"
+                            >Bookmarks</span
+                        >
+                    </a>
+
+                    <a href="#" class="p-3 flex items-center">
+                        <img src="./assets/images/Lists.svg" alt="" />
+                        <span class="ml-5 font-size-4 font-semibold"
+                            >Lists</span
+                        >
+                    </a>
+
+                    <a href="#" class="p-3 flex items-center">
+                        <img src="./assets/images/Profile.svg" alt="" />
+                        <span class="ml-5 font-size-4 font-semibold"
+                            >Profile</span
+                        >
+                    </a>
+
+                    <a href="#" class="p-3 flex items-center">
+                        <img src="./assets/images/More.svg" alt="" />
+                        <span class="ml-5 font-size-4 font-semibold">More</span>
+                    </a>
+                </nav>
+
+                <!-- twit button -->
+                <button
+                    class="mt-4 px-20 py-4 bg-[#1DA1F2] rounded-full text-white font-semibold text-[17px]"
+                >
+                    Tweet
+                </button>
+            </div>
+
+            <div class="w-full flex-1 px-4">
+                <!-- header -->
+                <div>
+                    <div
+                        class="flex h-[53px] justify-between items-center border border-[#2F3336] border-t-0 px-4"
+                    >
+                        <h2 class="text-white font-semibold text-[20px]">
+                            Home
+                        </h2>
+                        <img src="./assets/images/Top-Tweets.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- right side -->
+            <div class="w-[360px] pr-3">
+                <!-- search input -->
+                <div
+                    class="h-[42px] flex items-center bg-lightDark rounded-full text-gray1"
+                >
+                    <i class="fa-solid fa-magnifying-glass text-[18px] p-3"></i>
+                    <input
+                        type="text"
+                        class="w-full h-full bg-transparent outline-none px-3 line-height-4 text-[15px] text-whiteD9"
+                        placeholder="Search Twitter"
+                    />
+                </div>
+
+                <!-- trends -->
+                <div class="mt-3 bg-lightDark rounded-xl w-full text-whiteD9">
+                    <div class="flex justify-between py-3">
+                        <h3
+                            class="ml-4 font-semibold text-[19px] line-height-[22px]"
+                        >
+                            Trends for you
+                        </h3>
+                        <img
+                            class="mr-7 w-[20px]"
+                            src="./assets/images/Settings.svg"
+                            alt=""
+                        />
+                    </div>
+
+                    <!-- trending list -->
+                    <div class="flex flex-col px-4 py-3 gap-6">
+                        <!-- trending item -->
+                        <div class="flex flex-col gap-1">
+                            <div class="flex justify-between items-center">
+                                <p class="text-[13px] text-gray1">
+                                    Trending in Turkey
+                                </p>
+                                <i
+                                    class="fa-solid cursor-pointer fa-ellipsis text-[16px] text-gray1"
+                                ></i>
+                            </div>
+                            <p class="text-[15px]">#SQUID</p>
+                            <p class="text-[13px] text-gray1">2,066 Tweets</p>
+                        </div>
+
+                        <!-- trending item -->
+                        <div class="flex flex-col gap-1">
+                            <div class="flex justify-between items-center">
+                                <p class="text-[13px] text-gray1">
+                                    Trending in Turkey
+                                </p>
+                                <i
+                                    class="fa-solid cursor-pointer fa-ellipsis text-[16px] text-gray1"
+                                ></i>
+                            </div>
+                            <p class="text-[15px]">#SQUID</p>
+                            <p class="text-[13px] text-gray1">2,066 Tweets</p>
+                        </div>
+
+                        <!-- trending item -->
+                        <div class="flex flex-col gap-1">
+                            <div class="flex justify-between items-center">
+                                <p class="text-[13px] text-gray1">
+                                    Trending in Turkey
+                                </p>
+                                <i
+                                    class="fa-solid cursor-pointer fa-ellipsis text-[16px] text-gray1"
+                                ></i>
+                            </div>
+                            <p class="text-[15px]">#SQUID</p>
+                            <p class="text-[13px] text-gray1">2,066 Tweets</p>
+                        </div>
+
+                        <!-- trending item -->
+                        <div class="flex flex-col gap-1">
+                            <div class="flex justify-between items-center">
+                                <p class="text-[13px] text-gray1">
+                                    Trending in Turkey
+                                </p>
+                                <i
+                                    class="fa-solid cursor-pointer fa-ellipsis text-[16px] text-gray1"
+                                ></i>
+                            </div>
+                            <p class="text-[15px]">#SQUID</p>
+                            <p class="text-[13px] text-gray1">2,066 Tweets</p>
+                        </div>
+                    </div>
+
+                    <button
+                        class="text-[15px] p-4 pt-0 text-[#1D9BF0] text-start font-semibold"
+                    >
+                        Show more
+                    </button>
+                </div>
+
+                <!-- follows -->
+                <div class="mt-3 bg-lightDark rounded-xl w-full text-whiteD9">
+                    <div class="flex justify-between py-3">
+                        <h3
+                            class="ml-4 font-semibold text-[19px] line-height-[22px]"
+                        >
+                            Who to follow
+                        </h3>
+                    </div>
+
+                    <!-- follows list -->
+                    <div class="flex flex-col px-4 py-3 gap-6">
+                        <!-- follow item -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img
+                                    class="size-12 rounded-full object-cover"
+                                    src="https://lh4.googleusercontent.com/rAu6Oi1vFIlx747JxosPs9qs3vd08vqU49L1eLWojiWrIIAj5xDEcdSwYS_AeGLwSGR6HmWnkeKk7DZJN3oReVQOop8b7q29kzkC3DEAS3XRtv828wTac8OPlPsdQwgOwd573PaF"
+                                    alt=""
+                                />
+
+                                <div class="ml-3">
+                                    <div class="flex">
+                                        <h4 class="text-whiteD9">
+                                            The New York Times
+                                        </h4>
+                                        <img
+                                            class="w-5"
+                                            src="./assets/images/Verified.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <p class="text-gray1">@nytimes</p>
+                                </div>
+                            </div>
+                            <!-- follow button -->
+                            <button
+                                class="text-[14px] px-4 py-2 rounded-full text-[#0F1419] bg-[#EFF3F4]"
+                            >
+                                Follow
+                            </button>
+                        </div>
+
+                        <!-- follow item -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img
+                                    class="size-12 rounded-full object-cover"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjaCfq-oOIyUF7zwkUxU76MFIZGKmxgLz2eQ&s"
+                                    alt=""
+                                />
+
+                                <div class="ml-3">
+                                    <div class="flex">
+                                        <h4 class="text-whiteD9">CNN</h4>
+                                        <img
+                                            class="w-5"
+                                            src="./assets/images/Verified.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <p class="text-gray1">@CNN</p>
+                                </div>
+                            </div>
+                            <!-- follow button -->
+                            <button
+                                class="text-[14px] px-4 py-2 rounded-full text-[#0F1419] bg-[#EFF3F4]"
+                            >
+                                Follow
+                            </button>
+                        </div>
+
+                        <!-- follow item -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img
+                                    class="size-12 rounded-full object-cover"
+                                    src="https://logo.com/image-cdn/images/kts928pd/production/08207a1a4c3383abed17d2995786c44959ceaa91-1140x620.png?w=1920&q=72&fm=webp"
+                                    alt=""
+                                />
+
+                                <div class="ml-3">
+                                    <div class="flex">
+                                        <h4 class="text-whiteD9">Twitter</h4>
+                                        <img
+                                            class="w-5"
+                                            src="./assets/images/Verified.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <p class="text-gray1">@Twitter</p>
+                                </div>
+                            </div>
+                            <!-- follow button -->
+                            <button
+                                class="text-[14px] px-4 py-2 rounded-full text-[#0F1419] bg-[#EFF3F4]"
+                            >
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+
+                    <button
+                        class="text-[15px] p-4 pt-0 text-[#1D9BF0] text-start font-semibold"
+                    >
+                        Show more
+                    </button>
+                </div>
+
+                <!-- footer -->
+                <footer class="mt-4 px-4 w-full text-gray1 text-[13px] mb-20">
+                    <div class="flex gap-3">
+                        <span>Terms of Service</span>
+                        <span>Privacy Policy</span>
+                        <span>Cookie Policy</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <span>Imprint</span>
+                        <span>Ads info</span>
+                        <span>More ...</span>
+                        <span>© 2021 Twitter, Inc.</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
